@@ -1,12 +1,17 @@
 class Api::V1::UsersController < ApplicationController
 
+
+
   def create
+    #byebug
+    params {"user"=>{"email"=>"temp@gmail.com", "password"=>"temp", "username"=>"temp_par"}}
+    byebug
     @user = User.new(user_params)
     if @user.save
       #session[:user_id] = @user.id
       #flash[:notice] = "Welcome to the Alpha Blog #{@user.username}, you have successfully signed up"
       #redirect_to articles_path
-      json_response "Signed Up successfully", true, {user: @user}, :ok
+      json_response "Signed Up successfully ......#{params.require(:user).permit(:username, :email, :password)}", true, {user: @user}, :ok
     else
       json_response "Something wrong", false, {}, :unprocessable_entity
 

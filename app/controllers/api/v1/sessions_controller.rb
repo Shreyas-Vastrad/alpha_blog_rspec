@@ -1,5 +1,6 @@
 class Api::V1::SessionsController < ApplicationController
 
+
     def new
       json_response "Welcome to Login page", true, {}, :ok
     end
@@ -27,3 +28,5 @@ class Api::V1::SessionsController < ApplicationController
         #redirect_to root_path
     end
 end
+#<ActionController::Parameters {"session"=><ActionController::Parameters {"email"=>"shreyasvastrad72@gmail.com", "password"=>"Shrey@96"} permitted: false>, "format"=>:json, "controller"=>"api/v1/sessions", "action"=>"create"} 
+#permitted: false>

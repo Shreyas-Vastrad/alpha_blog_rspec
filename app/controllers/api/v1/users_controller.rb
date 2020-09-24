@@ -4,8 +4,6 @@ class Api::V1::UsersController < ApplicationController
 
   def create
     #byebug
-    params {"user"=>{"email"=>"temp@gmail.com", "password"=>"temp", "username"=>"temp_par"}}
-    byebug
     @user = User.new(user_params)
     if @user.save
       #session[:user_id] = @user.id

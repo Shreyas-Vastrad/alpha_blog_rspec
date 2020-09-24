@@ -1,13 +1,13 @@
 example_id                                                     | status | run_time        |
 -------------------------------------------------------------- | ------ | --------------- |
-./spec/controllers/api/v1/sessions_controller_spec.rb[1:1:1:1] | passed | 0.10855 seconds |
-./spec/controllers/api/v1/sessions_controller_spec.rb[1:1:2:1] | passed | 0.0021 seconds  |
-./spec/controllers/api/v1/users_controller_spec.rb[1:1:1:1]    | passed | 0.01667 seconds |
-./spec/models/user_spec.rb[1:1:1:1]                            | passed | 0.00314 seconds |
-./spec/models/user_spec.rb[1:1:2:1]                            | passed | 0.01613 seconds |
-./spec/models/user_spec.rb[1:1:3:1]                            | passed | 0.0047 seconds  |
-./spec/models/user_spec.rb[1:1:4:1]                            | passed | 0.007 seconds   |
-./spec/models/user_spec.rb[1:1:5:1]                            | passed | 0.00766 seconds |
-./spec/models/user_spec.rb[1:1:6:1]                            | passed | 0.00747 seconds |
-./spec/requests/get_login_spec.rb[1:1:1]                       | passed | 0.00192 seconds |
-./spec/requests/post_login_spec.rb[1:1:1]                      | passed | 0.00699 seconds |
+./spec/controllers/api/v1/sessions_controller_spec.rb[1:1:1:1] | passed | 0.01332 seconds |
+./spec/controllers/api/v1/sessions_controller_spec.rb[1:1:2:1] | passed | 0.01842 seconds |
+./spec/controllers/api/v1/users_controller_spec.rb[1:1:1:1]    | passed | 0.00808 seconds |
+./spec/models/user_spec.rb[1:1:1:1]                            | passed | 0.00377 seconds |
+./spec/models/user_spec.rb[1:1:2:1]                            | passed | 0.00353 seconds |
+./spec/models/user_spec.rb[1:1:3:1]                            | passed | 0.00557 seconds |
+./spec/models/user_spec.rb[1:1:4:1]                            | passed | 0.00497 seconds |
+./spec/models/user_spec.rb[1:1:5:1]                            | passed | 0.02998 seconds |
+./spec/models/user_spec.rb[1:1:6:1]                            | passed | 0.009 seconds   |
+./spec/requests/get_login_spec.rb[1:1:1]                       | passed | 0.09411 seconds |
+./spec/requests/post_login_spec.rb[1:1:1]                      | passed | 0.00977 seconds |

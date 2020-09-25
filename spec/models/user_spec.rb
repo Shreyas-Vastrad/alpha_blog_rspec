@@ -20,7 +20,7 @@ RSpec.describe User do
       end
     end
 
-    describe 'emaiformat' do
+    describe 'emailformat' do
       it 'must be in correct format' do
         expect(subject).to be_valid
         subject.email = 'rspec_test@gm'

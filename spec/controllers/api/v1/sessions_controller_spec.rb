@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Api::V1::SessionsController, type: :request  do
+RSpec.describe Api::V1::SessionsController  do
 
     describe 'Methods' do
         describe '#create' do
@@ -10,7 +10,7 @@ RSpec.describe Api::V1::SessionsController, type: :request  do
                 # post :show, :id => subcategory.id.to_s, :sort => 'title'
                 # expect(User.create(username: 'Rspec_test', email: 'rspec_test@gmail.com', password: "test@123")).to eql(User.last)
                 current_user = User.create(email: 'shreyasvastrad723@gmail.com', username: 'Shreyas9623', password: 'Shrey@9623')
-                post '/api/v1/login', :params => { :session => { :email => "shreyasvastrad723@gmail.com", :password => "Shrey@9623" }, :format => :json }
+                post :create, :params => { :session => { :email => "shreyasvastrad723@gmail.com", :password => "Shrey@9623" }, :format => :json }
                 expect(session[:user_id]).to eq(current_user.id)
             end
 
@@ -18,7 +18,7 @@ RSpec.describe Api::V1::SessionsController, type: :request  do
 
         describe '#destroy' do
             it 'should logout the user' do
-                delete '/api/v1/logout'
+                delete :destroy
                 expect(session[:user_id]).to eq(nil)
             end
         end

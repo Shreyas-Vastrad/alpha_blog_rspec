@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Login requests', type: :request do
+RSpec.describe 'Login requests'do
 
     describe 'POST /login' do
         it 'checks status' do
